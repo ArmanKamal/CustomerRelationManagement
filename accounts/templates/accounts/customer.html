@@ -1,0 +1,55 @@
+{% extends 'accounts/base.html'%}
+
+{% block content %}
+
+<div class="row">
+ <div class="col-md-4">
+    <div class="card card-body">
+        <h2>Customers:</h2>
+        <hr />
+        <button type="button" class="btn btn-info btn-sm my-2">Update Customer</button>
+        <button type="button" class="btn btn-danger btn-sm">Delete Customer</button>
+    </div>
+  </div>
+
+   <div class="col-md-4">
+    <div class="card card-body">
+        <h2>Customers:</h2>
+        <hr />
+        <button type="button" class="btn btn-success btn-sm">Create button</button>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Customer</th>
+                    <th scope="col">Orders</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+  </div>
+
+   <div class="col-md-4">
+    <div class="card card-body">
+        <h2>Customers:</h2>
+        <hr />
+        <button type="button" class="btn btn-secondary btn-sm">Create button</button>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Customer</th>
+                    <th scope="col">Orders</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+  </div>
+</div>
+
+
+{% endblock%}
