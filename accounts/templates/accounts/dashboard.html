@@ -13,12 +13,17 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th scope="col">#</th>
                         <th scope="col">Customer</th>
-                        <th scope="col">Orders</th>
+                        <th scope="col">Phone</th>
                     </tr>
                 </thead>
                 <tbody>
+                {% for customer in customers %}
+                    <tr>
+                        <td>{{ customer.name }}</td>
+                        <td>{{ customer.phone }}</td>
+                    </tr>
+                {% endfor %}
                 </tbody>
             </table>
         </div>
@@ -31,7 +36,6 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th scope="col">#</th>
                         <th scope="col">Product</th>
                         <th scope="col">Date Ordered</th>
                         <th scope="col">Status</th>
@@ -40,6 +44,15 @@
                     </tr>
                 </thead>
                 <tbody>
+                       {% for order in orders %}
+                    <tr>
+                        <td>{{ order.product }}</td>
+                        <td>{{ order.date_created }}</td>
+                        <td>{{ order.status }}</td>
+                        <td><a href="#" class="btn btn-success">Update</a></td>
+                        <td><a href="#" class="btn btn-danger">Delete</a></td>
+                    </tr>
+                {% endfor %}
                 </tbody>
             </table>
         </div>
